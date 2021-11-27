@@ -1,0 +1,173 @@
+html, body{
+    min-height:100%;
+    background-color:gray;
+    }
+img{
+    width:350px;
+    height:350px;
+}
+.aboba{
+    height: 35px;
+    border-radius:25px;
+}
+
+.img-container{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:25px;
+}
+
+.button-container{
+    margin:0 auto;
+    display:flex;
+    justify-content:space-around;
+}
+#info{
+    background-color: darkgreen;
+    padding:20px;
+    border-radius:25px;
+    width:500px;
+    margin:0 auto;
+    margin-bottom: 50px;
+}
+#author, #job{
+    padding:20px;
+    border-radius:25px;
+    width:500px;
+    margin:0 auto;
+}
+
+.container-fluid{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px){
+    img{
+        width:120px;
+        height:120px;
+    }
+    body{
+        font-size:10px;
+    }
+    .aboba{
+        height: 35px;
+        border-radius:25px;
+    }
+
+    .img-container{
+        display:flex;
+        justify-content:space-around;
+        margin-bottom:5px;
+    }
+    
+    .button-container{
+        margin:0 auto;
+        display:flex;
+        justify-content:space-around;
+    }
+    #info{
+        background-color: darkgreen;
+        padding:20px;
+        border-radius:25px;
+        width:300px;
+        margin:0 auto;
+        margin-bottom: 5px;
+    }
+    #author, #job{
+        padding:20px;
+        border-radius:25px;
+        width:500px;
+        margin:0 auto;
+        margin-bottom: 5px;
+        margin-left:220px;
+    }
+    
+    .container-fluid{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #footer {
+        position: fixed;
+        margin-top:50px;
+        left: 0; bottom: 0;
+        width: 100%;
+    }
+    .wave{
+        position:relative;
+        overflow:hidden;
+        bottom:0;
+    }
+    .wave-one{
+        background: url('../images/wave2.png') repeat-x;
+        opacity:0.5;
+        width:7000px;
+        height:10px;
+        animation:waves 15s infinite linear;
+        position:absolute;
+        bottom:0;
+    }
+    .wave-two{
+        background: url('../images/wave1.png') repeat-x;
+        opacity:0.5;
+        width:7000px;
+        height:10px;
+        animation:waves 10s infinite linear;
+        position:relative;
+        bottom:0;
+    }
+    @keyframes waves{
+        0%{
+            margin-left:0;
+        }
+        100%{
+            margin-left:-1440px;
+        }
+        
+    
+    }
+}
+
+#footer {
+    position: fixed;
+    margin-top:50px;
+    left: 0; bottom: 0;
+    width: 100%;
+}
+.wave{
+    position:relative;
+    overflow:hidden;
+    bottom:0;
+}
+.wave-one{
+    background: url('../images/wave2.png') repeat-x;
+    opacity:0.5;
+    width:7000px;
+    height:350px;
+    animation:waves 15s infinite linear;
+    position:absolute;
+    bottom:0;
+}
+.wave-two{
+    background: url('../images/wave1.png') repeat-x;
+    opacity:0.5;
+    width:7000px;
+    height:350px;
+    animation:waves 10s infinite linear;
+    position:relative;
+    bottom:0;
+}
+@keyframes waves{
+    0%{
+        margin-left:0;
+    }
+    100%{
+        margin-left:-1440px;
+    }
+    
+
+}
